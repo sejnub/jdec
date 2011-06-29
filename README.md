@@ -1,8 +1,12 @@
 ## Motivation
 
-Decoding JSON in erlang is (IMHO) not at all a straightforward thing to do. I wanted to have something that is similar to the javascript syntax of simply saying "jsonVariable.member.submember".
+Decoding JSON in erlang is IMHO not at all a straightforward thing to do. 
+I wanted to have something that is similar to the javascript syntax of simply saying "jsonVariable.member.submember".
 
+Therefore I wrote this parser which allows you to access a member of a JSON object by symply saying:
+    jdeg:get(JsonString, SelectorString).
 
+Additionally I added a few related functions to make the access even more comfortable.
 
 
 ## Release process
@@ -52,3 +56,7 @@ This document simply outlines the release process:
 
 * mochijson.erl is included as the JSON-Decoder and does most of the work. 
   I justed added the parser for the dot syntax.
+                                                    
+* This module is work in progress. It does its job but there is a lot which can (and will) be improved.
+
+                                                     
