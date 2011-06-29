@@ -15,31 +15,31 @@ This document simply outlines the release process:
 ## Usage
 
 
-JSON1 = {
-          \"meta_schema_name\": \"real\",
-          \"meta_schema_version\": 1,
-          \"comments\": [
-            \"Bernhard\",
-            \"Tina\"
-          ],
-          \"identifier\": {
-            \"asset\": 45,
-            \"aspect\": 12
-          },
-          \"payload\": {
-            \"payload_schema_name\": \"real\",
-            \"payload_schema_version\": 1,
-            \"id\": 123,
-            \"time\": \"2011-05-14T14:45:12.435691\",
-            \"data\": {
-              \"real\": 23.56456
-            }
-          }
-        }.
-
-
-jdec:get(  JSON1, ".identifier.asset") -> [45] 
-jdec:get_s(JSON1, ".identifier.asset") -> 45 
+    JSON1 = {
+              \"meta_schema_name\": \"real\",
+              \"meta_schema_version\": 1,
+              \"comments\": [
+                \"Bernhard\",
+                \"Tina\"
+              ],
+              \"identifier\": {
+                \"asset\": 45,
+                \"aspect\": 12
+              },
+              \"payload\": {
+                \"payload_schema_name\": \"real\",
+                \"payload_schema_version\": 1,
+                \"id\": 123,
+                \"time\": \"2011-05-14T14:45:12.435691\",
+                \"data\": {
+                  \"real\": 23.56456
+                }
+              }
+            }.
+    
+    
+    jdec:get(  JSON1, ".identifier.asset") -> [45] 
+    jdec:get_s(JSON1, ".identifier.asset") -> 45 
 
 
 
@@ -48,4 +48,7 @@ jdec:get_s(JSON1, ".identifier.asset") -> 45
 
 ## Comments
 
-* The 
+* This module is not optimized for speed by now.
+
+* mochijson.erl is included as the JSON-Decoder and does most of the work. 
+  I justed added the parser for the dot syntax.
