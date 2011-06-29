@@ -1,7 +1,7 @@
 ## Motivation
 
 Decoding JSON in erlang is IMHO not at all a straightforward thing to do. 
-I wanted to have something that is similar to the javascript syntax of simply saying "jsonVariable.member.submember".
+I wanted to have something that is similar to the javascript syntax of simply saying "jsonString.member.submember".
 
 Therefore I wrote this parser which allows you to access a member of a JSON object by simply saying:
     jdec:get(JsonString, ".member.submember").
