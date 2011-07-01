@@ -1,6 +1,5 @@
 ## Motivation
-
-Decoding JSON in erlang is IMHO not at all a straightforward thing to do. 
+Parsing JSON in erlang is IMHO not at all a straightforward thing to do. 
 I wanted to have something that is similar to the javascript syntax of simply saying "jsonString.member.submember".
 
 Therefore I wrote this parser which allows you to access a member of a JSON object by simply saying:
