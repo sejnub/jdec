@@ -54,6 +54,6 @@ Additionally I added a few related functions to make the access even more comfor
 * mochijson.erl is included as the JSON-Decoder and does most of the work. 
   I justed added the parser for the dot syntax.
                                                     
-* This module is work in progress. It does its job but there is a lot which can (and will) be improved.
+* This module is work in progress. It does its job but there is a lot which can be improved.
 
                                                      
