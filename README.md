@@ -1,3 +1,10 @@
+## Status and rights
+
+This module does its job but there is a lot which could (but probably won't) be improved.
+
+Do with it whatever you want. I claim no rights to it.
+
+
 ## Motivation
 Parsing JSON in erlang is IMHO not at all a straightforward thing to do. 
 I wanted to have something that is similar to the javascript syntax of simply saying "jsonString.member.submember".
@@ -49,11 +56,10 @@ Additionally I added a few related functions to make the access even more comfor
 
 ## Comments
 
-* This module is not optimized for speed by now.
+* This module is not optimized for speed.
 
 * mochijson.erl is included as the JSON-Decoder and does most of the work. 
   I justed added the parser for the dot syntax.
                                                     
-* This module is work in progress. It does its job but there is a lot which can be improved.
 
                                                      
